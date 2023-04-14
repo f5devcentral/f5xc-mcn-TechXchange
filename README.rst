@@ -305,7 +305,7 @@ Create HTTP LB
 
 Assuming you now have your Cloud B confirmed, let's create one more HTTP Load Balancer for this use case.
 
-1. Navigate to **Load Balancers** and select **HTTP Load Balancers**. Then click the **Add HTTP Load Balancer** button to open the form of HTTP Load Balancer creation.
+1. Navigate to **Multi-Cloud App Connect** and select **HTTP Load Balancers**. Then click the **Add HTTP Load Balancer** button to open the form of HTTP Load Balancer creation.
 
 .. figure:: assets/cloud_b_lb_create.png
 
