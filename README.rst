@@ -413,88 +413,106 @@ Deploy with Terraform
 
      ./cloud-C-setup.sh
 
-2. You can check status in the F5 Distributed Cloud Console, **Cloud and Edge Sites**, **Site List** and check the **Health Score**. It may take some time to provision the node.
+2. You can check status in the F5 Distributed Cloud Console, **Cloud and Edge Sites**, **Site List** and check the **Health Score**. It may take some time to provision the node. 
 
 .. figure:: assets/xc/cloud_c_ready.png
 
-Create Global Network
+Review Global Network
 ~~~~~~~~~~~~~~~~~~~~~
 
-Assuming you now have your Cloud C confirmed, let's move on to create and configure a Global Network in Cloud A VPC site.
+Assuming you now have your Cloud C confirmed, let's move on to configure a Global Network. For automation purposes, this demo already created the Global Network object "<lastname>-global-techxhange" with Terraform code. Your task will be to associate Cloud A and Cloud C with the Global Network.
 
-1. Open the service menu and proceed to **Cloud and Edge Sites**.
+First validate the existing Global Network object. This way, you can see how it was created and the different properties.
+
+1. Open the service menu and proceed to **Multi-Cloud Network Connect**.
 
 .. figure:: assets/cloud_c_aws_1.png
 
-2. In **Site Management** select **AWS VPC Sites** to see the site created. 
+2. In **Networking** select **Virtual Networks**.
+
+.. figure:: assets/global_network_1.png
+
+3. Open the menu of your Global Network and select **Manage Configuration**.
+
+.. figure:: assets/global_network_2.png
+
+4. Notice the type is set to Global Network. Click **Edit Configuration** to see more properties.
+
+.. figure:: assets/global_network_3.png
+
+5. Review the additional fields and then click **Cancel and Exit**.
+
+.. figure:: assets/global_network_4.png
+
+Update Global Network with Cloud A
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Now it's time to connect Cloud A and Cloud C together by associating the sites with the Global Network. First, configure Cloud A.
+ 
+1. In **Site Management** select **AWS VPC Sites** to see the site created. 
 
 .. figure:: assets/cloud_c_aws_2.png
 
-3. Open the menu of Cloud A site and select **Manage Configuration**.
+2. Open the menu of Cloud A site and select **Manage Configuration**.
 
 .. figure:: assets/cloud_c_aws_3.png
 
-4. In order to enable the editing mode, click **Edit Configuration**.
+3. In order to enable the editing mode, click **Edit Configuration**.
 
 .. figure:: assets/cloud_c_aws_4.png
 
-5. Scroll down to the **Networking Config** and click **Edit Configuration**. 
+4. Scroll down to the **Networking Config** and click **Edit Configuration**. 
 
 .. figure:: assets/cloud_c_aws_5.png
 
-6. Open the drop down menu to select global networks to connect and click **Add Item** to start creating Global Network.
+5. If needed, enable **Show Advanced Fields**, select "Connect Global Networks", and click **Add Item**.
 
 .. figure:: assets/cloud_c_aws_6.png
 
-7. Open the list of the Global Virtual Networks and click **Create new Virtual Network**.
+6. Open the list of networks and select your Global Network. Then add it by clicking **Apply**.
 
 .. figure:: assets/cloud_c_aws_7.png
 
-8. First, give it a *unique* name (ex. yourlastname-arcadia-global). Then move on and select type of network in the drop down menu. For this use case we will need Global Network. Finally, click **Continue** to proceed.
+7. Apply the updated configuration to the Site by clicking **Apply** again.
 
 .. figure:: assets/cloud_c_aws_8.png
 
-9. Take a look at the Network and click **Add Item**. 
+8. Review the final configuration click **Save and Exit**.
 
 .. figure:: assets/cloud_c_aws_9.png
 
-10. The created Global Network will appear in the site configuration. Look it through and click **Apply**.
+Update Global Network with Cloud C
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Now we will add the Global Network to Cloud C. We can do this connectivity since there is non-overlapping IP space. If you recall, Cloud A is configured with 10.0.0.0/16 CIDR, and Cloud C is configured with 192.168.0.0/16 CIDR.
+
+1. Open the Cloud C site menu and select **Manage Configuration**.
 
 .. figure:: assets/cloud_c_aws_10.png
 
-11. To complete the process we will click **Save and Exit**. 
+2. In order to enable the editing mode, click **Edit Configuration**.
 
 .. figure:: assets/cloud_c_aws_11.png
 
-Now we will add the Global Network we created to Cloud C, AWS VPC site. We can do this connectivity since there is non-overlapping IP space. If you recall, Cloud A is configured with 10.0.0.0/16 CIDR, and Cloud C is configured with 192.168.0.0/16 CIDR.
+3. Scroll down to the **Networking Config** and click **Edit Configuration**. 
 
-12. Open the Cloud C site menu and select **Manage Configuration** to add the Global Network to AWS VPC site.
+.. figure:: assets/cloud_c_aws_5.png
 
-.. figure:: assets/cloud_c_aws_12.png
+4. If needed, enable **Show Advanced Fields**, select "Connect Global Networks", and click **Add Item**.
 
-13. Enable editing configuration by clicking **Edit Configuration**.
+.. figure:: assets/cloud_c_aws_6.png
 
-.. figure:: assets/cloud_c_aws_13.png
+5. Open the list of networks and select your Global Network. Then add it by clicking **Apply**.
 
-14. Scroll down the configuration and click **Edit Configuration** under **Networking Config**.
+.. figure:: assets/cloud_c_aws_7.png
 
-.. figure:: assets/cloud_c_aws_14.png
+6. Apply the updated configuration to the Site by clicking **Apply** again.
 
-15. First, enable showing advanced fields, and then select the global network to connect. Click **Add Item**.
+.. figure:: assets/cloud_c_aws_8.png
 
-.. figure:: assets/cloud_c_aws_15.png
+7. Review the final configuration click **Save and Exit**.
 
-16. Open the list of networks and select the one we created earlier. Then add it by clicking **Add Item**.
-
-.. figure:: assets/cloud_c_aws_16.png
-
-17. Apply the updated configuration to the Site by clicking **Apply**.
-
-.. figure:: assets/cloud_c_aws_10.png
-
-18. Take a look at the configuration and complete updating by clicking **Save and Exit**.
-
-.. figure:: assets/cloud_c_aws_11.png
+.. figure:: assets/cloud_c_aws_9.png
 
 Update Routes in Cloud A
 ~~~~~~~~~~~~~~~~~~~~~~~~
