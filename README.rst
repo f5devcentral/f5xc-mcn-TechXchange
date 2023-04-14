@@ -568,6 +568,8 @@ Alternatively, you can re-run the Cloud A setup script to apply the correct tags
      Plan: 0 to add, 1 to change, 0 to destroy.
      ...snippet...
 
+Note: Here is an example of the updated route table names after running the setup script again.
+
 .. figure:: assets/cloud_a_route_table_public2.png
 
 Items of importance...
@@ -643,6 +645,8 @@ Alternatively, you can re-run the Cloud C setup script to apply the correct tags
      ...snippet...
 
 9. Select "Edit Routes" to create a new route entry.
+
+Note: Here is an example of the updated route table names after running the setup script again.
 
 .. figure:: assets/cloud_c_route_table_public2.png
 
