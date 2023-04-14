@@ -296,7 +296,7 @@ Deploy with Terraform
 
      ./cloud-B-setup.sh
 
-2. You can check status in the F5 Distributed Cloud Console, **Cloud and Edge Sites**, **Site List** and check the **Health Score**. It may take some time to provision the node.
+2. You can check status in the F5 Distributed Cloud Console, **Multi-Cloud Network Connect**, **Site List** and check the **Health Score**. It may take some time to provision the node.
 
 .. figure:: assets/xc/cloud_b_ready.png
 
@@ -413,7 +413,7 @@ Deploy with Terraform
 
      ./cloud-C-setup.sh
 
-2. You can check status in the F5 Distributed Cloud Console, **Cloud and Edge Sites**, **Site List** and check the **Health Score**. It may take some time to provision the node. 
+2. You can check status in the F5 Distributed Cloud Console, **Multi-Cloud Network Connect**, **Site List** and check the **Health Score**. It may take some time to provision the node. 
 
 .. figure:: assets/xc/cloud_c_ready.png
 
