@@ -115,3 +115,13 @@ resource "aws_route" "remote_network" {
   destination_cidr_block      = var.xc_remote_cidr
   network_interface_id        = data.aws_network_interface.xc_private_nic.id
 }
+
+# JeffGiroux - TechXchange notes
+# 	Create XC Global Network for student so we can also
+#   automate the destruction when lab is done.
+
+resource "volterra_virtual_network" "global" {
+  name           = "${var.owner}-global-techxchange"
+  namespace      = "system"
+  global_network = true 
+}
