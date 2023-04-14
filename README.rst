@@ -158,7 +158,7 @@ Deploy with Terraform
 
      ./cloud-A-setup.sh
 
-2. Open F5 Distributed Cloud Console and navigate to the **Cloud and Edge Sites** tab.
+2. Open F5 Distributed Cloud Console and navigate to the **Multi-Cloud Network Connect** tab.
 
 .. figure:: assets/xc/cloud_a_sites.png
 
