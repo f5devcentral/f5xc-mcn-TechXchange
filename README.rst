@@ -171,7 +171,7 @@ Create HTTP LB
 
 Next set up the HTTP Load Balancer.
 
-1. In the F5 Distributed Cloud Console navigate to the **Load Balancers** service in the service menu.
+1. In the F5 Distributed Cloud Console navigate to the **Multi-Cloud App Connect** service in the service menu.
 
 .. figure:: assets/open_lb.png
 
