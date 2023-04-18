@@ -37,12 +37,6 @@ Note: The lab for F5 TechXchange uses the F5 UDF environment, and for simplicity
   - 1x F5 XC Node
   - 1x Arcadia money transfer app (EC2 instance)
 
-Pre-requisites
-#################
-
-- F5 UDF Blueprint = TBD
-- A Web browser to access the F5 Distributed Cloud console
-
 Scenario
 ####################
 
@@ -65,7 +59,7 @@ In this module we will deploy front-end portal in Cloud A with Terraform scripts
 Prepare Lab Environment
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Open the UDF Blueprint "F5 TechXchange 2023 XC MCN (TBD)" https://xxx.xxx.xxx and click "Deploy" to create a deployment. Then hit "Start".
+1. Open the UDF Blueprint "F5XC TechXchange 2023 MCN Lab" https://udf.f5.com/b/ee3fbeab-9756-48c4-a45e-dfd7794357b4 and click "Deploy" to create a deployment. Then hit "Start".
 
 > *Once you start the UDF deployment, it will create an ephemeral account on the F5 Distributed Cloud console (this may take 5-10 min). Then you will receive an email to update your password.*
 
