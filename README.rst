@@ -10,7 +10,7 @@ Use this guide and the provided sample app, included scripts and utility app to 
 - MCN Cloud-to-Cloud via Global Network (Layer 3)
 - Verify Application and Routing
 
-Each of the modules in this guide addresses a specific use-case with a help of included Terraform scripts. With Terraform scripts you can simplify the deployment of a sample app components in multiple cloud environments,
+Each of the modules in this guide addresses a specific use-case with a help of included Terraform scripts. With Terraform scripts you can simplify the deployment of a sample app components in multiple cloud environments.
 
 Public Cloud (multi-cloud), Modules & Scripts
 ##############################################
