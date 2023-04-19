@@ -3,6 +3,8 @@ Lab 1: Explore F5 Distributed Cloud Console
 
 .. contents:: Table of Contents
 
+In this lab you will launch the UDF Blueprint and setup your initial F5 XC login credentials.
+
 Launch UDF
 ##########
 
@@ -59,3 +61,7 @@ Namespaces, which provide an environment for isolating configured applications o
 
 .. figure:: ../assets/xc/multi-cloud_app_connect2.png
 
+Next Steps
+##########
+
+- `Lab 2: Customize Lab Environment <lab2.rst>`_
