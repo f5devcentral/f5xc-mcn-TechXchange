@@ -3,7 +3,7 @@ Lab 2: Create Back-end HTTP LB in Cloud A
 
 .. contents:: Table of Contents
 
-In this lab we will create another HTTP Load Balancer (Layer 7), and make it available on the Arcadia Finance website, which was previously inactive in the earlier testing. 
+In this lab we will create another HTTP Load Balancer (Layer 7) and make it available on the Arcadia Finance website, which was previously inactive in the earlier testing. 
 
 Below is the service topology we will achieve at the end of this module. Note the IP overlap of the Core Module IP (deployed in the previous lab), and the IP of the Refer-a-Friend service (also 10.0.20.100). This is a perfect opportunity to use an HTTP Load Balancer!
 
@@ -103,4 +103,4 @@ As soon as the DNS is updated, we can go to our website and see that a new modul
 Next Steps
 ##########
 
-- `Back-end Service via Sites/Global Network (Layer 3) in Cloud C <../module2>`_
+- `Module 3: Back-end Service via Sites/Global Network (Layer 3) in Cloud C <../module3>`_
