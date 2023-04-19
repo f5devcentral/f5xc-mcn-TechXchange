@@ -46,4 +46,4 @@ We hope you have a better understanding of the F5 Distributed Cloud MCN services
 Next Steps
 ##########
 
-- `Home <..README.rst>`_
+- `Home <../README.rst>`_
