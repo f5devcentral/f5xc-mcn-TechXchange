@@ -29,8 +29,8 @@ Lab 1: Deploy Terraform Resources in Cloud A
 
 3. Open F5 Distributed Cloud Console and navigate to the **Multi-Cloud Network Connect** tab.
 
-.. figure:: assets/xc/cloud_a_sites.png
+.. figure:: ../assets/xc/cloud_a_sites.png
 
 4. Open **Site List** and check the **Health Score**. It may take some time to provision the node.
 
-.. figure:: assets/xc/cloud_a_ready.png
+.. figure:: ../assets/xc/cloud_a_ready.png
