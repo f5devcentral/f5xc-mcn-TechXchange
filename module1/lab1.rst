@@ -1,6 +1,8 @@
 Lab 1: Deploy Terraform Resources in Cloud A
 ============================================
 
+.. contents:: Table of Contents
+
 In this lab we will use Terraform scripts to deploy resources in Cloud A for AWS. This will include AWS infrastructure and an F5 XC node deployed as type "AWS VPC Site". 
 
 Deploy Terraform
