@@ -1,6 +1,8 @@
 Lab 1: Deploy Terraform Resources in Cloud A
 ============================================
 
+In this lab we will use Terraform scripts to deploy resources in Cloud A for AWS. This will include AWS infrastructure and an F5 XC node deployed as type "AWS VPC Site". 
+
 1. Return to the jumphost terminal within the xRDP session, ensuring you are in the following directory /home/ubuntu/f5xc-mcn-TechXchange/.
 
 .. code:: bash
