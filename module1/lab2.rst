@@ -10,7 +10,7 @@ In this lab we use F5 XC to configure HTTP Load Balancer resources for the front
 .. figure:: ../assets/ssl-offload.png
 
 Create HTTP LB
-~~~~~~~~~~~~~~~
+##############
 
 Next set up the HTTP Load Balancer.
 
@@ -59,7 +59,7 @@ Next set up the HTTP Load Balancer.
 .. figure:: ../assets/cloud_a_lb_save.png
 
 Update DNS
-~~~~~~~~~~~~
+##########
 
 You will see the created HTTP Load Balancer. Now we need to copy the host name in order to delegate the domain.
 
@@ -80,7 +80,7 @@ You will see the created HTTP Load Balancer. Now we need to copy the host name i
 .. figure:: ../assets/cloud_a_lb_dns_valid.png
 
 Test Application
-~~~~~~~~~~~~~~~~~
+################
 
 Now that the DNS is updated and the certificate is active, let's proceed to the website and test.
 
