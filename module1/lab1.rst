@@ -36,3 +36,8 @@ In this lab we will use Terraform scripts to deploy resources in Cloud A for AWS
 4. Open **Site List** and check the **Health Score**. It may take some time to provision the node.
 
 .. figure:: ../assets/xc/cloud_a_ready.png
+
+Next Steps
+##########
+
+- `Lab 2: Create Front-end Portal in Cloud A <lab2.rst>`_
