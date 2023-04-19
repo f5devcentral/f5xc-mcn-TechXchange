@@ -1,3 +1,4 @@
+F5XC TechXchange 2023 MCN Lab
 ==================================================
 
 .. contents:: Table of Contents
@@ -10,7 +11,7 @@ Use this guide and the provided sample app, included scripts and utility app to 
 - MCN Cloud-to-Cloud via Global Network (Layer 3)
 - Verify Application and Routing
 
-Each of the modules in this guide addresses a specific use-case with a help of included Terraform scripts. With Terraform scripts you can simplify the deployment of a sample app components in multiple cloud environments.
+Each of the modules in this guide addresses a specific use-case with the help of included Terraform scripts. With Terraform scripts you can simplify the deployment of a sample app components in multiple cloud environments.
 
 Public Cloud (multi-cloud), Modules & Scripts
 ##############################################
@@ -45,6 +46,14 @@ The XC MCN is a complete multi-cloud networking solution to deploy distributed a
 The initial state of the Arcadia Finance website features several "Coming Soon" placeholders for the additional banking services which will "come online" as soon as the networking is properly configured. We will use F5 Cloud Services Multi-Cloud Networking to quickly connect these new services into the core banking module by way of XC MCN features. Once properly networked, these features will be turned.
 
 .. figure:: assets/mcn-overview.gif
+
+Next Steps
+####################
+
+  - `Module 1: Front-end Portal deployed in Cloud A <module1>`_
+  - `Module 2: Back-end Service via HTTP LB (Layer 7) in Cloud B <module2>`_
+  - `Module 3: Back-end Service via Sites/Global Network (Layer 3) in Cloud C <module3>`_
+
 
 Module Overview
 ################
@@ -137,7 +146,7 @@ Note: Remember the "Password" as it will be used for **VES_P12_PASSWORD** in the
 
 12. Create **VES_P12_PASSWORD** environment variable with the password from the previous step.
 
-Note: Keep the terminal window open.
+Note: Keep the terminal window open. If you close it, you will need to export the **VES_P12_PASSWORD** environment variable again.
 
 .. code:: bash
 
@@ -146,7 +155,7 @@ Note: Keep the terminal window open.
 Deploy with Terraform
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Return to the jumphost terminal within the xRDP session. Deploy the Terraform code for "Cloud A" by running the script **./cloud-A-setup.sh**.
+1. Return to the jumphost terminal within the xRDP session, ensuring you are in the following directory /home/ubuntu/f5xc-mcn-TechXchange/. Deploy the Terraform code for "Cloud A" by running the script **./cloud-A-setup.sh**.
 
 .. code:: bash
 
@@ -284,7 +293,7 @@ Below is the service topology we will achieve at the end of this module. Note th
 Deploy with Terraform
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Deploy the Terraform code for "Cloud B" by running the script **./cloud-B-setup.sh**.
+1. Deploy the Terraform code for "Cloud B" by running the script **./cloud-B-setup.sh**, ensuring you are in the following directory /home/ubuntu/f5xc-mcn-TechXchange/.
 
 .. code:: bash
 
@@ -401,7 +410,7 @@ At the end of this module, we will have the following architecture for our app s
 Deploy with Terraform
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Deploy the Terraform code for "Cloud C" by running the script **./cloud-C-setup.sh**.
+1. Deploy the Terraform code for "Cloud C" by running the script **./cloud-C-setup.sh**, ensuring you are in the following directory /home/ubuntu/f5xc-mcn-TechXchange/.
 
 .. code:: bash
 
@@ -690,7 +699,7 @@ The dashboard shows all the insights, including sites' status and traffic distri
 Destroy Environment
 ###################
 
-When your done with the lab, make sure to run the destroy scripts to delete all resources in F5 Distributed Cloud and AWS.
+When your done with the lab, make sure to run the destroy scripts to delete all resources in F5 Distributed Cloud and AWS. These should be run on the jumphost terminal within the directory /home/ubuntu/f5xc-mcn-TechXchange/.
 
 .. code:: bash
 
