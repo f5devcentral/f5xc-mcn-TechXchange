@@ -50,13 +50,11 @@ The initial state of the Arcadia Finance website features several "Coming Soon" 
 Next Steps
 ####################
 
-  - `Module 1: Front-end Portal deployed in Cloud A <module1>`_
-  - `Module 2: Back-end Service via HTTP LB (Layer 7) in Cloud B <module2>`_
-  - `Module 3: Back-end Service via Sites/Global Network (Layer 3) in Cloud C <module3>`_
+- `Module 0: Prepare Lab Environment <module0>`_
+- `Module 1: Front-end Portal Deployed in Cloud A <module1>`_
+- `Module 2: Back-end Service via HTTP LB (Layer 7) in Cloud B <module2>`_
+- `Module 3: Back-end Service via Sites/Global Network (Layer 3) in Cloud C <module3>`_
 
-
-Module Overview
-################
 
 Module 1: Front-end Portal deployed in Cloud A
 **********************************************
@@ -152,22 +150,6 @@ Note: Keep the terminal window open. If you close it, you will need to export th
 
      export VES_P12_PASSWORD=your_certificate_password
 
-Deploy with Terraform
-~~~~~~~~~~~~~~~~~~~~~~~
-
-1. Return to the jumphost terminal within the xRDP session, ensuring you are in the following directory /home/ubuntu/f5xc-mcn-TechXchange/. Deploy the Terraform code for "Cloud A" by running the script **./cloud-A-setup.sh**.
-
-.. code:: bash
-
-     ./cloud-A-setup.sh
-
-2. Open F5 Distributed Cloud Console and navigate to the **Multi-Cloud Network Connect** tab.
-
-.. figure:: assets/xc/cloud_a_sites.png
-
-3. Open **Site List** and check the **Health Score**. It may take some time to provision the node.
-
-.. figure:: assets/xc/cloud_a_ready.png
 
 Create HTTP LB
 ~~~~~~~~~~~~~~~
