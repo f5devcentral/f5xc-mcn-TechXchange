@@ -5,8 +5,6 @@ Lab 2: Create Front-end Portal in Cloud A
 
 In this lab we use F5 XC to configure HTTP Load Balancer resources for the front-end. This use case supposes SSL offloading, the process of removing the SSL-based encryption from incoming traffic to relieve a web server of the processing burden of decrypting and/or encrypting traffic sent via SSL.
 
-> *Note: We will use a tool to generate a domain entry for lab purposes (Arcadia DNS)*
-
 .. figure:: ../assets/ssl-offload.png
 
 Create HTTP LB
