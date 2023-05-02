@@ -1,12 +1,12 @@
-Module 4: Destroy Environment and Summary
+Module 4: REQUIRED: Destroy Environment and Summary
 =========================================
 
 .. contents:: Table of Contents
 
-Destroy Environment
+REQUIRED: Destroy Environment
 ###################
 
-When your done with the lab, make sure to run the destroy scripts to delete all resources in F5 Distributed Cloud and AWS. These should be run on the jumphost terminal within the directory /home/ubuntu/f5xc-mcn-TechXchange/.
+When you are done with the lab, make sure to run the destroy scripts to delete all resources in F5 Distributed Cloud and AWS. These should be run on the jumphost terminal within the directory /home/ubuntu/f5xc-mcn-TechXchange/.
 
 1. Return to the jumphost terminal within the xRDP session, ensuring you are in the following directory /home/ubuntu/f5xc-mcn-TechXchange/.
 

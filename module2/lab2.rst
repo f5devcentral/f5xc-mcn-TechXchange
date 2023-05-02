@@ -22,7 +22,7 @@ Assuming you now have your Cloud B confirmed, let's create one more HTTP Load Ba
 
 .. figure:: ../assets/cloud_b_lb_metadata.png
 
-3. Now we need to provide a domain name for our workload. In this use case we will specify **friends.yawning-white-antelope.github.securelab.online**. Then open the drop-down menu to select Load Balancer type - **HTTP** and check off the box to enable automatic managing of DNS records. Next we need to specify the port. We will use Port **80** for this use case. 
+3. Now we need to provide a domain name for our workload. In this use case we will specify **friends.yawning-white-antelope.github.securelab.online**. Then open the drop-down menu to select Load Balancer type - **HTTP** and uncheck the box to disable automatic managing of DNS records. Next we need to specify the port. We will use Port **80** for this use case. 
 
 Note: your FQDN will be different!
 

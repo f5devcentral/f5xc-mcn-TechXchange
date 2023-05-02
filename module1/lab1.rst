@@ -30,6 +30,8 @@ Deploy Terraform
 
 2. Deploy the Terraform code for "Cloud A" by running the script **./cloud-A-setup.sh**.
 
+*Note: when you run setup scripts in this lab, you will be required to type "yes" at the prompt from Terraform*
+
 .. code:: bash
 
     ./cloud-A-setup.sh
