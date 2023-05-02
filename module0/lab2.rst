@@ -8,7 +8,7 @@ In this lab you will customize the Terraform environment by cloning the GitHub r
 Clone Repository and Update Terraform
 #####################################
 
-1. Open a terminal on the jumphost. Clone the lab repository and change into the directory.
+1. Open a terminal on the jumphost. Clone the lab repository and change into the directory. **Leave this terminal window open for an easy lab experience.**
 
 .. code:: bash
 
@@ -21,7 +21,13 @@ Clone Repository and Update Terraform
 
      cp admin.auto.tfvars.example admin.auto.tfvars
 
-3. Edit the file using "vi" in the terminal so you can customize the parameter values for your lab like owner, keys, and zone. You will retrieve the values in the following steps. 
+3. Edit the file using "vi" in the terminal so you can customize the following parameter values. You will retrieve the values in the following steps. 
+* owner - *use your last name here so that your XC site names are unique*
+* api_url - *leave this default, since we are using the tenant f5-sales-demo*
+* api_p12_file - *leave this default if you are following this demo in UDF, since this is where your .p12 file will be downloaded to*
+* aws_access_key - *find this in the UDF console using the steps below*
+* aws_secret_key - *find this in the UDF console using the steps below*
+* zone_name - *use the Arcadia DNS tool in the steps below to generate a unique domain name for your demo*
 
 .. code:: bash
 
@@ -40,7 +46,7 @@ Clone Repository and Update Terraform
      # aws_secret_key = "secretxxxx"
      # zone_name      = "your.domain.com"
 
-4. Open the `Arcadia DNS Tool <https://tool.xc-mcn.securelab.online>`_ and copy your Zone Name. Paste the value in the tfvars file for "zone_name".
+4. Open the `Arcadia DNS Tool <https://tool.xc-mcn.securelab.online>`_ and copy your Zone Name. Paste the value in the tfvars file for "zone_name". **Leave this browser tab open. We will use this in future steps** 
 
 > *Note: We will use a tool to generate a domain entry for lab purposes (Arcadia DNS)*.
 
